@@ -6,4 +6,5 @@ transformers==4.48.0
 unstructured_ingest==0.3.12
 torch
 google.generativeai
+python-dotenv
 # https://drive.google.com/drive/folders/10uj0ITZ6jXB_cOhLY_bmvJnLqSkKrlkl?usp=sharing
