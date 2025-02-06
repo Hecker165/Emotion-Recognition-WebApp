@@ -2,7 +2,7 @@ import json
 import os
 import tempfile
 import google.generativeai as genai
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from transformers import pipeline
 from unstructured_ingest.v2.pipeline.pipeline import Pipeline
@@ -36,13 +36,15 @@ os.environ["UNSTRUCTURED_API_URL"] = "https://api.unstructured.io/general/v0/gen
 
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # Default to 10000 if PORT is not set
     app.run(host="0.0.0.0", port=port)
 
-@app.route("/")
-def index():
-    return render_template("index.html")
 
 @app.route('/predict_emotion', methods=['POST'])
 def predict_emotion():
