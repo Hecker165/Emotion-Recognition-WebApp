@@ -10,13 +10,13 @@ const emotionColors = {
 };
 
 const emojis = {
-            "anger": '<img src="emojis/angry.svg" alt="Anger" class="emoji-img">',
-            "disgust": '<img src="emojis/disgusted.svg" alt="Disgust" class="emoji-img">',
-            "fear": '<img src="emojis/fear.svg" alt="Fear" class="emoji-img">',
-            "joy": '<img src="emojis/smile.svg" alt="Joy" class="emoji-img">',
-            "neutral": '<img src="emojis/neutral.svg" alt="Neutral" class="emoji-img">',
-            "sadness": '<img src="emojis/crying.svg" alt="Sadness" class="emoji-img">',
-            "surprise": '<img src="emojis/surprised.svg" alt="Surprise" class="emoji-img">'
+            "anger": '<img src="static/emojis/angry.svg" alt="Anger" class="emoji-img">',
+            "disgust": '<img src="static/emojis/disgusted.svg" alt="Disgust" class="emoji-img">',
+            "fear": '<img src="static/emojis/fear.svg" alt="Fear" class="emoji-img">',
+            "joy": '<img src="static/emojis/smile.svg" alt="Joy" class="emoji-img">',
+            "neutral": '<img src="static/emojis/neutral.svg" alt="Neutral" class="emoji-img">',
+            "sadness": '<img src="static/emojis/crying.svg" alt="Sadness" class="emoji-img">',
+            "surprise": '<img src="static/emojis/surprised.svg" alt="Surprise" class="emoji-img">'
         };
 
 let emotionChart = null;
