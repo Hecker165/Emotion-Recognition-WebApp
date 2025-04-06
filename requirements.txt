@@ -9,4 +9,5 @@ google.generativeai
 python-dotenv
 hf_xet
 gunicorn
+unstructured-ingest[remote]
 # https://drive.google.com/drive/folders/10uj0ITZ6jXB_cOhLY_bmvJnLqSkKrlkl?usp=sharing
